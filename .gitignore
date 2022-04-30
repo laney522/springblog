@@ -150,5 +150,6 @@ $RECYCLE.BIN/
 
 .classpath
 .project
+.yml
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse
