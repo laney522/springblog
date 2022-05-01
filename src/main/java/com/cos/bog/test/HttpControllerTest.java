@@ -16,8 +16,8 @@ public class HttpControllerTest {
 
 	// https://localhost:8080/http/post (select)
 	@GetMapping("/http/get")
-	public String getTest() {
-		return "get 요청";
+	public String getTest(Member m) {
+		return "get 요청"+m.getId()+","+m.getUsername()+","+m.getPassword()+","+m.getEmail();
 	}
 	
 	// https://localhost:8080/http/post (insert)
