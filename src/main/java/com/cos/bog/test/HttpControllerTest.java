@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 //사용자가 요청 -> 응답(HTML파일)
 //@Controller
 
-// 사용자가 요청 -> 응답(Data)
+// 사용자가 요청 -> 응답(Data)s
 
 @RestController
 public class HttpControllerTest {
@@ -20,7 +20,7 @@ public class HttpControllerTest {
 	public String lombokTest() {
 		Member m = Member.builder().password("ssar").password("1234").email("ssar@nate.com").build();
 		System.out.println(TAG+"getter"+m.getId());
-		m.setId(5000);
+		m.setUsername("cos");
 		System.out.println(TAG+"setter"+m.getId());
 		return "lombok test 완료";
 	}
